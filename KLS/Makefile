@@ -1,0 +1,1 @@
+obj-y := KLS.o

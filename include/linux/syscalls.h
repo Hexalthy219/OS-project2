@@ -940,5 +940,10 @@ asmlinkage long sys_pkey_alloc(unsigned long flags, unsigned long init_val);
 asmlinkage long sys_pkey_free(int pkey);
 asmlinkage long sys_statx(int dfd, const char __user *path, unsigned flags,
 			  unsigned mask, struct statx __user *buffer);
+asmlinkage long kls_insert(const char *key, size_t keylen,
+                           const char *val, size_t vallen);
+asmlinkage long kls_search(const char *key, size_t keylen,
+                           char *val, size_t index);
+asmlinkage long kls_delete(const char *key, size_t keylen);
 
 #endif
